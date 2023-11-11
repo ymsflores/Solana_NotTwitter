@@ -9,8 +9,8 @@ const { tweet } = toRefs(props)
 </script>
 
 <template>
-    <div class="px-8 py-4">
-        <div>
+    <div class="px-8 py-4 border-slate-800">
+        <div class="mb-1">
             <h3 class="inline font-bold" :title="tweet.author">
                 <router-link :to="{ name: 'Home' }" class="hover:underline">
                     {{ tweet.author_display }}

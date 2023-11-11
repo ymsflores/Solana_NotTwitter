@@ -53,7 +53,7 @@ const send = async () => {
       ref="textarea"
       rows="1"
       class="text-xl w-full focus:outline-none resize-none mb-3 bg-transparent"
-      placeholder="What's happening?"
+      placeholder="What is happening?!"
       v-model="content"
     ></textarea>
 
@@ -98,7 +98,7 @@ const send = async () => {
     </div>
   </div>
 
-  <div v-else class="px-8 py-4 bg-gray-50 text-gray-500 text-center border-b">
+  <div v-else class="px-8 py-4 bg-transparent text-gray-500 text-center border-b border-slate-800">
     Connect your wallet to join in on the not-tweets!
   </div>
 </template>

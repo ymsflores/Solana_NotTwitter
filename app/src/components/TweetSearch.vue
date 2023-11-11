@@ -12,7 +12,7 @@ const { modelValue, placeholder, disabled } = toRefs(props)
 </script>
 
 <template>
-    <div class="relative border-b">
+    <div class="relative border-b border-slate-800">
         <input
             type="text"
             class="text-gray-700 w-full pl-16 pr-32 py-4 bg-gray-50"

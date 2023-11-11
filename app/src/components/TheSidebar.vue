@@ -15,7 +15,7 @@ function gotoGoogle() {
 
 <template>
   <aside
-    class="flex flex-col items-center md:items-stretch space-y-2 md:space-y-4"
+    class="flex flex-col items-center md:items-stretch space-y-2 md:space-y-4 mr-400"
   >
     <div class="flex flex-col items-center md:items-stretch space-y-2">
       <router-link
