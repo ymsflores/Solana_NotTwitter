@@ -15,8 +15,7 @@ export class Tweet
     }
 
     get author_display () {
-        const author = this.author.toBase58()
-        return author.slice(0,4) + '..' + author.slice(-4)
+        return this.author.toBase58()
     }
 
     get created_at () {

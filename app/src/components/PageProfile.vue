@@ -1,7 +1,6 @@
 <script setup>
 import { ref, watchEffect } from 'vue'
 import { fetchTweets, authorFilter } from '@/api'
-import TweetForm from '@/components/TweetForm'
 import TweetList from '@/components/TweetList'
 import { useWorkspace } from '@/composables'
 
@@ -17,13 +16,11 @@ watchEffect(() => {
         .finally(() => loading.value = false)
 })
 
-const addTweet = tweet => tweets.value.push(tweet)
 </script>
 
 <template>
-    <div v-if="wallet" class="border-b px-8 py-4 bg-gray-50">
+    <div v-if="wallet" class="border-b border-slate-800 px-8 py-4 bg-slate-700">
         {{ wallet.publicKey.toBase58() }}
     </div>
-    <tweet-form @added="addTweet"></tweet-form>
     <tweet-list :tweets="tweets" :loading="loading"></tweet-list>
 </template>

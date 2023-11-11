@@ -20,7 +20,7 @@ function gotoGoogle() {
     <div class="flex flex-col items-center md:items-stretch space-y-2">
       <router-link
         :to="{ name: 'Home' }"
-        class="rounded-full hover:bg-gray-100 p-3 md:w-full inline-flex items-center space-x-4"
+        class="rounded-full hover:bg-slate-900 p-3 md:w-full inline-flex items-center space-x-4"
         active-class="font-bold"
         v-slot="{}"
       >
@@ -29,7 +29,7 @@ function gotoGoogle() {
       <router-link
         v-if="connected"
         :to="{ name: 'Profile' }"
-        class="rounded-full hover:bg-gray-100 p-3 md:w-full inline-flex items-center space-x-4"
+        class="rounded-full hover:bg-slate-900 p-3 md:w-full inline-flex items-center space-x-4"
         active-class="font-bold"
         v-slot="{}"
       >
