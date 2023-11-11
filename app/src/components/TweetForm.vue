@@ -99,6 +99,6 @@ const send = async () => {
   </div>
 
   <div v-else class="px-8 py-4 bg-transparent text-gray-500 text-center border-b border-slate-800">
-    Connect your wallet to join in on the not-tweets!
+    Connect your phantom wallet to make your own not-tweets.
   </div>
 </template>
