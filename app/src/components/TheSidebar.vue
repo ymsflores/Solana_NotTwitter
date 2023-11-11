@@ -1,22 +1,15 @@
 <script setup>
 import { WalletMultiButton, useWallet } from "solana-wallets-vue";
-import { useWorkspace } from "@/composables";
-const { wallet } = useWorkspace();
 const { connected } = useWallet();
-
-function gotoGoogle() {
-  window.open(
-    "https://explorer.solana.com/address/" +
-      String(wallet.value.publicKey.toBase58()) +
-      "?cluster=devnet"
-  );
-}
 </script>
 
 <template>
   <aside
     class="flex flex-col items-center md:items-stretch space-y-2 md:space-y-4 mr-400"
   >
+    <div class="flex flex-col px-3 items-left md:10">
+        <img class="object-cover h-10 w-10" src="../assets/logo.png">
+    </div>
     <div class="flex flex-col items-center md:items-stretch space-y-2">
       <router-link
         :to="{ name: 'Home' }"
